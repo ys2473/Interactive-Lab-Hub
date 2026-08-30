@@ -79,36 +79,25 @@ page.
 
 ## Part 0. Know Your Master
 
-Before you prototype anything, get intimately acquainted with the piece you
-drew. Do real research. You are looking less for trivia than for the *shape of
-the interaction*:
+Birthday candles are a folk tradition with no single known creator. It's commonly traced to eighteenth-century Germany, where candles were placed on children’s birthday cakes, often matching their age. Over time, this developed into the tradition of making a  wish and blowing out the candles.
 
-- What inputs are available to the user? What responses does the work give?
-- Who is present, and how does the piece color the relationships between them?
-- What is the piece famous for? What are its strengths and its weaknesses?
+The core interaction has three stages: lighting the candles, making a wish, and blowing out the candles. Lighting the candles begins the ritual and draws everyone’s attention toward the cake. The birthday person then looks at the light and makes a wish. Finally, they blow toward the candles, causing the flames to go out. The most recognizable moment is when the birthday person blows out the candles. The breath is the main physical input, and the extinguishing flames are the visible response. The people nearby usually clap or cheer afterward, signaling that the ritual is complete. The people involved include the birthday person and the friends or family celebrating with them. One strength of this tradition is that the interaction is simple and easy to recognize. The candlelight becomes a visual center, while the birthday person blow out produces an immediate and visible response. However, one  weakness is the pressure created by everyone watching the birthday person. Everyone becomes quiet and waits for the person to make a wish and blow out the candles. Although this attention can make someone feel celebrated, it can also feel like a performance. The pressure may become stronger if the person takes a long time to make a wish or cannot blow out all the candles at once.
 
-  Sometimes the details of how the interaction worked are lost in history. Try filling it in with your imagination!
 
-**Describe your masterwork here, in your own words. What is the core interaction
-someone would recognize it by?**
 
 ## Part A. Plan
 
-For your masterwork, reconstruct the interaction as a scene:
+Setting: The interaction takes place at Amy’s birthday celebration in an indoor space. A cake with a candle is placed at the center of the table.
+Players: The two players are Amy and Yan . Amy is the birthday person, and Yan is the friend celebrating with her.
+Activity: Amy lights the candle to begin the birthday ritual while Yan celebrates with her. Amy then looks at the candlelight and silently makes a wish. Finally, she takes a breath and blows out the candle. The flame responds to her breath by flickering and going out, and Yan reacts by cheering.
+Goals: Amy’s goal is to make a  wish and complete the birthday ritual by blowing out the candle. Yan’s goal is to support Amy and make the moment feel like a shared celebration. The candlelight connects the private act of wishing with the public act of celebrating.
 
-- **Setting:** Where and when does this interaction happen? (a jungle, a kitchen,
-  a spaceship corridor, a nightclub, a harbor at night)
-- **Players:** Who is involved? Who else is present? Think through everyone in
-  the setting, not just the primary user.
-- **Activity:** What is happening between the players and the light?
-- **Goals:** What is each player trying to do?
+<img width="1686" height="1280" alt="image" src="https://github.com/user-attachments/assets/55a30f6c-4cad-4eed-bf0f-1efb033328e0" />
 
-**Describe your setting, players, activity, and goals here.**
-
-Now **sketch a 3 storyboards** of the interaction you are recreating. (The number may depend on the thing you drew, but stretch your thinking!) They
-don't need to be beautiful, but they must capture and communicate not only the behavior of the light, but how it affects
-and the people around it. If you're new to storyboarding, read
-[this explanation](https://www.nngroup.com/articles/storyboards-visualize-ideas/).
+Our storyboard shows the three central stages of the interaction:
+   1. Amy lights the candle to begin the birthday celebration.
+   2. Amy looks at the candle and makes a private wish.
+   3. Amy blows out the candle with one breath while Yan celebrates.
 
 **Include pictures of your storyboards here.**
 
