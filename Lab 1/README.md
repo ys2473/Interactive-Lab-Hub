@@ -99,9 +99,6 @@ Our storyboard shows the three central stages of the interaction:
    2. Amy looks at the candle and makes a private wish.
    3. Amy blows out the candle with one breath while Yan celebrates.
 
-**Include pictures of your storyboards here.**
-
-Use the storyboards to decide what interaction to prototype.
 
 **Summarize the feedback you got here.**
 
