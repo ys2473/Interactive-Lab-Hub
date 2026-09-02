@@ -88,8 +88,11 @@ The core interaction has three stages: lighting the candles, making a wish, and 
 ## Part A. Plan
 
 Setting: The interaction takes place at Amy’s birthday celebration in an indoor space. A cake with a candle is placed at the center of the table.
+
 Players: The two players are Amy and Yan . Amy is the birthday person, and Yan is the friend celebrating with her.
+
 Activity: Amy lights the candle to begin the birthday ritual while Yan celebrates with her. Amy then looks at the candlelight and silently makes a wish. Finally, she takes a breath and blows out the candle. The flame responds to her breath by flickering and going out, and Yan reacts by cheering.
+
 Goals: Amy’s goal is to make a  wish and complete the birthday ritual by blowing out the candle. Yan’s goal is to support Amy and make the moment feel like a shared celebration. The candlelight connects the private act of wishing with the public act of celebrating.
 
 <img width="1686" height="1280" alt="image" src="https://github.com/user-attachments/assets/55a30f6c-4cad-4eed-bf0f-1efb033328e0" />
@@ -100,13 +103,17 @@ Our storyboard shows the three central stages of the interaction:
    3. Amy blows out the candle with one breath while Yan celebrates.
 
 
+
 **Summarize the feedback you got here.**
 
 ## Part B. Act out the Interaction
 
-We used a remote control light to represent the birthday candle. The brightness can be adjusted and light can be turn on and off remotely.
+We physically acted out the birthday candle interaction and narrated how the light was supposed to behave. Amy played the birthday person, and Yan played the friend celebrating with her. The first problem we encountered was controlling the light. We realized that we would either need a third person to control it or one of us would have to control the light while performing.
+We also found that the timing of the light control is very important, especially when turning off the light at the exact moment Amy blows toward it. If the light turns off too early or too late, the connection between Amy’s breath and the light’s response becomes less convincing.
 
-During the act, Yan will be both the friends and controls the light remotely. At the beginning of the interaction, Yan pretends to light the candle while discreetly turning on the remote-controlled light.  Amy looks at the light, makes a wish, and then blows toward it. When Yan sees Amy blowing, she remotely turns the light off. This creates the illusion that Amy’s breath extinguishes the candle. 
+Based on the performance, we updated our plan in two ways:
+   1.  Yan will lights the candle for Amy instead of Amy lighting it herself.
+   2.  Yan will be both the friends and the "wizard" that controlled the light. 
 
 
 
@@ -115,6 +122,7 @@ During the act, Yan will be both the friends and controls the light remotely. At
 We used a remote control light to represent the birthday candle. The brightness can be adjusted and light can be turn on and off remotely.
 
 During the act, Yan will be both the friends and controls the light remotely. At the beginning of the interaction, Yan pretends to light the candle while discreetly turning on the remote-controlled light.  Amy looks at the light, makes a wish, and then blows toward it. When Yan sees Amy blowing, she remotely turns the light off. This creates the illusion that Amy’s breath extinguishes the candle. 
+
 
 ## Part D. Wizard the Device
 
@@ -125,25 +133,8 @@ https://youtube.com/shorts/Ukj69Yok6vM?feature=share
 This is the first attempt, however, the different lighting option on the remote had made the lighting transition bit confused and diffcult at first. 
 
 
-**Include your first attempts at recording the wizarded set-up here.**
-
-## Part E. (optional) Costume the Device
-
-Only now should you worry about what the device looks like. Costume your phone so it reads
-as the object from your masterwork — HAL's eye, a Simon shell, a paper-lantern
-Tinker Bell, an Ambient Orb, a lighthouse, a jack-o'-lantern, whatever you drew.
-
-Think about the world your device lives in: could that environment overheat it?
-Is water a danger? Does it need to be loud and bright for an emergency, or quiet
-and calm for a bedroom?
-
-**Include sketches/photos of what your device might look like here.**
-
-**What concerns or opportunities shaped the way you designed its look?**
-
 ## Part F. Record
 
-**Record your prototyped interaction as a video sketch.** Aim for the bar from
 Our final video  recreates the birthday candle ritual using a remotely controlled light instead of a real flame. Yan begins the interaction by using her iPhone flashlight as a pretend lighter while secretly turning on the “candle". Amy then looks at the "candle", makes a private wish, and blows toward it. Yan turns off the "candle" at the moment Amy blows, creating the illusion that Amy blow out the candle. Yan then celebrates with Amy to complete the birthday ritual.
 
 The video focuses on the three central stages of the interaction: lighting the candle, candle stays on while making a wish, and blowing out the candle. We wanted the relationship between Amy and the "candle"  to be clear enough that viewers could recognize the birthday tradition without a real candle.
@@ -154,7 +145,6 @@ Collaboration and Credit:
 Ziqiao Gao performed as the birthday person. Yan Shen performed as Ziqiao (Amy)’s friend and acted as the hidden wizard controlling the light. We worked together on the storyboard, interaction plan, physical acting, and video recording.
 
 We used a remotely controlled light and an iPhone flashlight to recreate the interaction without using a real flame. We shot our video on both Iphone and Macbook, then we upload our two videos and finalized on Youtube.
-
 ---
 
 # Part 2 — ReMastering the light
