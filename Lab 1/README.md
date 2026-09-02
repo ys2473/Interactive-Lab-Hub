@@ -109,12 +109,6 @@ We used a remote control light to represent the birthday candle. The brightness 
 During the act, Yan will be both the friends and controls the light remotely. At the beginning of the interaction, Yan pretends to light the candle while discreetly turning on the remote-controlled light.  Amy looks at the light, makes a wish, and then blows toward it. When Yan sees Amy blowing, she remotely turns the light off. This creates the illusion that Amy’s breath extinguishes the candle. 
 
 
-**Are there things that seemed better on paper than when acted out?**
-
-**Did new ideas about the piece surface once you were on your feet?**
-
-**Are there key moments in the interaction where things could go in a different direction?**
-Iterate your storyboards to capture key non-sequential aspects of the interaction. 
 
 ## Part C. Prototype the Light (light first!)
 
@@ -160,11 +154,6 @@ Collaboration and Credit:
 Ziqiao Gao performed as the birthday person. Yan Shen performed as Ziqiao (Amy)’s friend and acted as the hidden wizard controlling the light. We worked together on the storyboard, interaction plan, physical acting, and video recording.
 
 We used a remotely controlled light and an iPhone flashlight to recreate the interaction without using a real flame. We shot our video on both Iphone and Macbook, then we upload our two videos and finalized on Youtube.
-**Include your video here.**
-
-**Please indicate who you collaborated with on this lab.** Be generous in
-acknowledging their contributions, and credit any other influences (YouTube,
-Github, Twitter, a friend who lent you a lamp) that informed your recreation.
 
 ---
 
