@@ -118,19 +118,9 @@ Iterate your storyboards to capture key non-sequential aspects of the interactio
 
 ## Part C. Prototype the Light (light first!)
 
-Use your smartphone as the light of your device. Open the browser on your phone
-to act as the "light," and use the remote control interface on your computer to
-change that light. Code and setup instructions for the *Tinkerbelle* tool are
-[here](https://github.com/IRL-CT/tinkerbelle) (we invented this tool for
-this lab). If you hit technical trouble, a manually or remotely controlled light
-switch, dimmer, or lamp is a fine substitute.
+We used a remote control light to represent the birthday candle. The brightness can be adjusted and light can be turn on and off remotely.
 
-**Get the light interaction working before anything else.** Your grade this week
-rides on the *light* being recognizable — the color, the rhythm, the timing, the
-way it answers a person. Only once your light interaction genuinely reads as your
-masterwork should you consider layering in a second modality (sound, vibration,
-motion). If in doubt, keep polishing the light. The other modalities are next
-week's business.
+During the act, Yan will be both the friends and controls the light remotely. At the beginning of the interaction, Yan pretends to light the candle while discreetly turning on the remote-controlled light.  Amy looks at the light, makes a wish, and then blows toward it. When Yan sees Amy blowing, she remotely turns the light off. This creates the illusion that Amy’s breath extinguishes the candle. 
 
 ## Part D. Wizard the Device
 
