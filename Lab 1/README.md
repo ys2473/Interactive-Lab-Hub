@@ -145,6 +145,8 @@ Collaboration and Credit:
 Ziqiao Gao performed as the birthday person. Yan Shen performed as Ziqiao (Amy)’s friend and acted as the hidden wizard controlling the light. We worked together on the storyboard, interaction plan, physical acting, and video recording.
 
 We used a remotely controlled light and an iPhone flashlight to recreate the interaction without using a real flame. We shot our video on both Iphone and Macbook, then we upload our two videos and finalized on Youtube.
+
+
 ---
 
 # Part 2 — ReMastering the light
