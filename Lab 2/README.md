@@ -158,7 +158,8 @@ You can look in `image.py` for an example of how to display an image on the scre
 
 <img width="1280" height="1707" alt="d8f153d69de4d164a53fcd511a3a5da0" src="https://github.com/user-attachments/assets/3bad301a-2bab-4d85-a9ab-e4edec3e5f5f" />
 
-<img width="1280" height="1707" alt="d8f153d69de4d164a53fcd511a3a5da0" src="https://github.com/user-attachments/assets/136500b3-7192-412c-ade4-829c0f5a97fb" />
+<img width="1280" height="1707" alt="47b1711fea4fad5ddab5aa2d478a25f6" src="https://github.com/user-attachments/assets/5b21b86d-e9df-4d20-932f-7b20c26489be" />
+
 
 
 ## Part D. 
