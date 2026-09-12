@@ -156,7 +156,9 @@ You can look in `screen_boot_script.py` for how to display text on the screen!
 
 You can look in `image.py` for an example of how to display an image on the screen. Can you make it switch to another image when you push one of the buttons?
 
-\*\*\***Include a picture of your own Raspberry Pi displaying the piscreen.service with your unique MAC address. Additionally, please provide another picture showing the successful completion of the screen test.**\*\*\*
+<img width="1280" height="1707" alt="d8f153d69de4d164a53fcd511a3a5da0" src="https://github.com/user-attachments/assets/3bad301a-2bab-4d85-a9ab-e4edec3e5f5f" />
+
+<img width="1280" height="1707" alt="d8f153d69de4d164a53fcd511a3a5da0" src="https://github.com/user-attachments/assets/136500b3-7192-412c-ade4-829c0f5a97fb" />
 
 
 ## Part D. 
