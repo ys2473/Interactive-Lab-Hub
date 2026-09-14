@@ -197,9 +197,13 @@ We strongly discourage literal digital or analog clock display: Be creative.
 
 ** Insert ideas, sketches, [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf)), storyboards for your ideas **
 
-My idea is to make a banana timer. Bananas start green, gradually turn yellow, develop spots, and are finally peeled and eaten. This process requires a certain amount of time. I'm going to use the process of bananas ripening to represent time. Firstly, it can represent the passage of time. As the bananas gradually ripen, time passes bit by bit. Users can judge the approximate time by observing the state of the bananas on the screen. Meanwhile, this can also be used as a timer. At the beginning of the countdown, the bananas are the greenest. As time goes by, the bananas become more and more ripe. Until the end of the countdown, the bananas are fully ripe and eaten. I divide the ripening of bananas into 12 steps, which also represent 12 hours. However, during the countdown, the maturation process will be adjusted according to the length of the countdown.
+My idea is to make a banana clock with an optional timer mode. Bananas start out green, gradually turn yellow, develop brown spots, and are finally peeled and eaten. I will use this familiar process of maturation to represent the passage of time.
 
-One button can be used to view the current status of the banana, and the other can be used to play an animation of the banana's ripening process.
+In clock mode, bananas are divided into 12 visual stages, corresponding to a 12-hour cycle. Users can estimate the approximate time by observing the status of bananas on the screen: green represents the start of the cycle (12 o 'clock), yellow represents the middle, brown spots represent the later stage, and empty skins represent the reset before the start of a new cycle.
+
+This device can also be used as a timer. When the countdown begins, the bananas are green. As the countdown continued, the bananas ripened. When the countdown ended, the bananas were peeled and eaten. The maturity rate varies according to the selected countdown length.
+
+Button A shows the current status of the banana. Button B plays an animated short film of the banana ripening process.
 
 <img width="394" height="265" alt="729b274dc5f3c5240594552268b76ab5" src="https://github.com/user-attachments/assets/f096ddf3-2bb5-434d-804a-a72f2691b4ce" />
 
