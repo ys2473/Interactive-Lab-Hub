@@ -197,6 +197,12 @@ We strongly discourage literal digital or analog clock display: Be creative.
 
 ** Insert ideas, sketches, [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf)), storyboards for your ideas **
 
+My idea is to make a banana timer. Bananas start green, gradually turn yellow, develop spots, and are finally peeled and eaten. This process requires a certain amount of time. I'm going to use the process of bananas ripening to represent time. Firstly, it can represent the passage of time. As the bananas gradually ripen, time passes bit by bit. Users can judge the approximate time by observing the state of the bananas on the screen. Meanwhile, this can also be used as a timer. At the beginning of the countdown, the bananas are the greenest. As time goes by, the bananas become more and more ripe. Until the end of the countdown, the bananas are fully ripe and eaten. I divide the ripening of bananas into 12 steps, which also represent 12 hours. However, during the countdown, the maturation process will be adjusted according to the length of the countdown.
+
+One button can be used to view the current status of the banana, and the other can be used to play an animation of the banana's ripening process.
+
+<img width="394" height="265" alt="729b274dc5f3c5240594552268b76ab5" src="https://github.com/user-attachments/assets/f096ddf3-2bb5-434d-804a-a72f2691b4ce" />
+
 
 
 **Put the names of the people you gave feedback to here. (Even better, add links to their repos here!)**
