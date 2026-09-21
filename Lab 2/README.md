@@ -213,8 +213,10 @@ Button A shows the current status of the banana. Button B plays an animated shor
 <img width="1815" height="1174" alt="IMG_2150" src="https://github.com/user-attachments/assets/bfdb4874-5301-47f0-b606-8c38c96aec39" />
 
 
-
-**Put the names of the people you gave feedback to here. (Even better, add links to their repos here!)**
+Feedback:
+https://github.com/MortalJin/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
+https://github.com/Simonehina/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
+https://github.com/Flora130/Interactive-Lab-Hub
 
 # Lab 2 Part 2
 
