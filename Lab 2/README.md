@@ -218,9 +218,14 @@ Button A shows the current status of the banana. Button B plays an animated shor
 
 
 Feedback:
-https://github.com/MortalJin/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
-https://github.com/Simonehina/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
-https://github.com/Flora130/Interactive-Lab-Hub
+
+Yangchen Jin(yj645): https://github.com/MortalJin/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
+
+Simin Xu(sx333): https://github.com/Simonehina/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md
+
+Flora zhang(zz979): https://github.com/Flora130/Interactive-Lab-Hub
+
+This design is very creative. It uses the ripening process of bananas to represent the passage of time, making the clock visually interesting. More interactions can be added, for instance, allowing users to peel or eat bananas at a certain stage. It is necessary to clarify what each button does respectively. Make the 12 states of bananas more distinct to facilitate users' judgment of time.
 
 # Lab 2 Part 2
 
@@ -259,7 +264,16 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 Do take advantage of having done the previous iteration to refine and simplify your design.
 
-** Insert any updates ideas, sketches, [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf))!, storyboards for your ideas **
+My final design is a banana clock. It has two functions in total: time viewing and timer, and the two buttons are precisely used to adjust the two functions. 
+
+First is the clock function. The main body of the screen is a banana. Twelve hours form a cycle. The banana changes from green to gradually yellow, develops spots, and is finally eaten. There are a total of twelve banana statuses, and the banana statuses are updated every hour. The time and date are displayed in the upper left corner of the screen. If you long press the A key, a complete animation of banana changes will be played and the time will be announced by voice.
+
+The second function is the timer, which can be switched by pressing the B key. The initial interface is used to set the time. The duration of the countdown to be carried out can be set through the knob. After the timing starts, a banana will appear in the middle of the screen. According to the timing duration, a complete banana animation will be played, with a specific countdown in the upper left corner. When the time is up, there will be a ten-second alarm. If you press the B key within ten seconds, the alarm will be turned off and an animation of a banana peel being thrown into the trash can will be played. If the B key is not pressed within ten seconds, the alarm will automatically stop and an animation showing the banana peel turning black and growing worms will play after ten seconds. After the countdown starts, the user can press the B key at any time to stop the timing and reset it.
+
+Video：https://youtu.be/0_rs9mPVdM0
+
+<img width="1000" height="1800" alt="IMG_4621" src="https://github.com/user-attachments/assets/48394543-2c9c-4ca0-aec7-3ca996c2d858" />
+
 
 
 \*\*\***Put a copy of your code in your Lab 2 Github repo.**\*\*\*
