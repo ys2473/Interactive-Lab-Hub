@@ -111,8 +111,8 @@ LONG_PRESS_SECONDS = 1.5
 
 
 # Timer settings
-DEFAULT_TIMER_SECONDS = 5 * 60
-MIN_TIMER_SECONDS = 1
+DEFAULT_TIMER_SECONDS = 0
+MIN_TIMER_SECONDS = 0
 MAX_TIMER_SECONDS = 60 * 60
 ALARM_RESPONSE_SECONDS = 10.0
 
@@ -415,19 +415,24 @@ while True:
             print("Timer selection mode")
 
         elif timer_state == "select":
-            # Start the countdown.
-            timer_total_seconds = selected_seconds
-            timer_start_time = time.monotonic()
-            timer_end_time = (
-                timer_start_time + timer_total_seconds
-            )
+            if selected_seconds <= 0:
+                # Do not start a zero-second timer.
+                print("Select at least one second")
 
-            timer_state = "running"
+            else:
+                # Start the countdown.
+                timer_total_seconds = selected_seconds
+                timer_start_time = time.monotonic()
+                timer_end_time = (
+                    timer_start_time + timer_total_seconds
+                )
 
-            print(
-                f"Timer started: "
-                f"{format_timer(selected_seconds)}"
-            )
+                timer_state = "running"
+
+                print(
+                    f"Timer started: "
+                    f"{format_timer(selected_seconds)}"
+                )
 
         elif timer_state == "running":
             # Cancel the countdown and return to selection.
