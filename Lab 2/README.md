@@ -211,10 +211,10 @@ Button A shows the current status of the banana. Button B plays an animated shor
 
 <img width="394" height="265" alt="729b274dc5f3c5240594552268b76ab5" src="https://github.com/user-attachments/assets/f096ddf3-2bb5-434d-804a-a72f2691b4ce" />
 
-<img width="1948" height="1177" alt="IMG_2149" src="https://github.com/user-attachments/assets/2132f1d4-6af4-4c8b-ba85-47eb0bb8ba87" />
+<img width="1000" height="550" alt="IMG_2149" src="https://github.com/user-attachments/assets/2132f1d4-6af4-4c8b-ba85-47eb0bb8ba87" />
 
 
-<img width="1815" height="1174" alt="IMG_2150" src="https://github.com/user-attachments/assets/bfdb4874-5301-47f0-b606-8c38c96aec39" />
+<img width="1000" height="600" alt="IMG_2150" src="https://github.com/user-attachments/assets/bfdb4874-5301-47f0-b606-8c38c96aec39" />
 
 
 Feedback:
