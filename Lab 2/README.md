@@ -272,7 +272,7 @@ The second function is the timer, which can be switched by pressing the B key. T
 
 Video：https://youtu.be/0_rs9mPVdM0
 
-<img width="500" height="900" alt="IMG_4621" src="https://github.com/user-attachments/assets/48394543-2c9c-4ca0-aec7-3ca996c2d858" />
+<img width="500" height="700" alt="IMG_4621" src="https://github.com/user-attachments/assets/48394543-2c9c-4ca0-aec7-3ca996c2d858" />
 
 
 
