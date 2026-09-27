@@ -131,7 +131,15 @@ The transcript is not the interesting output here — the timings are. Run it ag
 
 Available sizes, smallest first: `tiny.en`, `base.en`, `small.en`, `medium.en`. The `.en` variants are English-only and faster than their multilingual counterparts at the same size.
 
-\*\***Record a few seconds of your own speech (`arecord -d 5 -f cd -c 1 -r 16000 test.wav`) and transcribe it with at least two model sizes. Report the real-time factor for each. At what point does the accuracy improvement stop being worth the delay, for a system that has to answer you?**\*\*
+<img width="738" height="368" alt="Codex Image Sep 27, 2026, 04_13_04 PM" src="https://github.com/user-attachments/assets/498a7ec2-030b-405f-a055-93f44ea30982" />
+I recorded a audio clip saying “It’s Sunday, September 27th.”
+
+tiny.en: The transcript was “It’s Sunday, September 27th.” real-time factor: 0.20x, transcription took 1.01 seconds.
+
+base.en: The transcript was “It’s Sunday September the 27th.” real-time factor: 0.41x, transcription took 2.03 seconds.
+
+Both models correctly understood the sentences. The base model generates more natural wording, but it takes longer, approximately twice as long as the other one. I would choose tiny.en for a responsive dialogue system. When recognizing more difficult speech or numeric base.en might be more preferable.
+
 
 \*\***Write your own script that verbally asks for a numerical input (a phone number, zipcode, number of pets) and records the answer the respondent provides.**\*\* Numbers are a good stress test — transcription systems make characteristic errors on digit strings, and you will want to know what they are before you design around them.
 
@@ -153,7 +161,13 @@ Speak, pause, and watch it transcribe. Now change the endpointing threshold — 
 (.venv) $ python listen.py --min-silence 1.5
 ```
 
-\*\***Try both extremes, and something in between. Describe what each one feels like to talk to. Note specifically: at 0.2s, what kinds of normal speech get cut off? At 1.5s, what does the delay make the system seem like?**\*\*
+I tested three endpointing thresholds: 0.2 seconds, 0.7 seconds, and 1.5 seconds.
+
+0.2 seconds: It split my sentence into two parts. it transcribe the second part of my sentence wrong. And seems like it's unpatient.
+
+1.5 seconds: the complete sentence was transcribed correctly. but it delays more than the 0.2s one.
+
+0.7 second: provide a better balance and correctly transcribe my words.
 
 There is no correct value. A system that takes drink orders and a system that listens to someone think out loud want very different thresholds, and the right one depends on what your users are doing with their pauses.
 
@@ -164,6 +178,8 @@ There is no correct value. A system that takes drink orders and a system that li
 ```
 (.venv) $ python echo_bot.py
 ```
+<img width="657" height="214" alt="Screenshot 2026-09-27 at 4 47 46 PM" src="https://github.com/user-attachments/assets/d2bef412-e1fa-44d0-bddd-c4c84b9177cb" />
+
 
 ## D. Storyboard
 
