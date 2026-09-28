@@ -184,6 +184,12 @@ There is no correct value. A system that takes drink orders and a system that li
 
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.)
 
+What I want to design is a cooking timer with built-in recipes.
+
+The main voice-controlled functions of this cooking timer are divided into several steps: selecting recipes, checking ingredients, cooking steps and managing the timer. It only gives one cooking instruction at a time until the user provides a clear instruction such as "next". These simple instructions are very easy to recognize. For these easy commands, I usually give 0.7s to wait for slience. If some instructions need time for user to check, then 2s of wait will be set.
+
+At present, there is only a recipe for tomato pasta. More options can be imported later.
+
 <img width="2364" height="1365" alt="IMG_2151" src="https://github.com/user-attachments/assets/e49165a3-a14c-4ecb-a41c-aff99303230d" />
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses.
