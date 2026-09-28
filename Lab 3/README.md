@@ -184,11 +184,41 @@ There is no correct value. A system that takes drink orders and a system that li
 
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.)
 
-\*\***Post your storyboard and diagram here.**\*\*
+<img width="2364" height="1365" alt="IMG_2151" src="https://github.com/user-attachments/assets/e49165a3-a14c-4ecb-a41c-aff99303230d" />
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses.
 
-\*\***Please describe and document your process.**\*\*
+dialogue：
+
+Device: “Hi Yan! What would you like to cook today?” (wait for 0.7s of slience)
+
+User: “I want to make pasta.”
+
+Device: “You will need pasta, tomato sauce, garlic, olive oil, salt, and water. Say ‘repeat’ to hear the ingredients again, or say ‘start cooking’ when you are ready.” (wait for 2s of slience)
+
+User: “Start cooking.”
+
+Device: “Step one: Fill a pot with water and place it on the stove. Say ‘next’ when the water begins to boil.” (Wait until the user says a command like "next".)
+
+User: “Next.”
+
+Device: “Step two: Add the pasta to the pot. How many minutes do you want for the pasta?” (wait for 0.7 of slience)
+
+User: “Ten minutes.”
+
+Device: “You said ten minutes?” (wait for 0.7s of slience)
+
+User: “Yes.”
+
+Device: “Okay. I have started a ten-minute timer. Now, you can heat the tomato sauce with garlic and olive oil.” (wait for the timer finishes)
+
+Device: “Yan, it's already ten minutes. Drain the pasta and mix it with the tomato sauce.” (wait until next command)
+
+User: “Next.”
+
+Device: “Your tomato pasta is ready. Enjoy your meal!”
+
+
 
 Your script should include the pauses. Where does your device wait, and for how long? You now know from Part C that this is a parameter you have to choose, not something that happens for free.
 
