@@ -198,7 +198,7 @@ dialogue：
 
 Device: “Hi Yan! What would you like to cook today?” (wait for 0.7s of slience)
 
-User: “I want to make pasta.”
+User: “pasta.”
 
 Device: “You will need pasta, tomato sauce, garlic, olive oil, salt, and water. Say ‘repeat’ to hear the ingredients again, or say ‘start cooking’ when you are ready.” (wait for 2s of slience)
 
@@ -210,15 +210,15 @@ User: “Next.”
 
 Device: “Step two: Add the pasta to the pot. How many minutes do you want for the pasta?” (wait for 0.7 of slience)
 
-User: “Ten minutes.”
+User: “Fifteen minutes.”
 
-Device: “You said ten minutes?” (wait for 0.7s of slience)
+Device: “You said fifteen minutes?” (wait for 0.7s of slience)
 
 User: “Yes.”
 
-Device: “Okay. I have started a ten-minute timer. Now, you can heat the tomato sauce with garlic and olive oil.” (wait for the timer finishes)
+Device: “Okay. I have started a fifteen-minute timer. Now, you can heat the tomato sauce with garlic and olive oil.” (wait for the timer finishes)
 
-Device: “Yan, it's already ten minutes. Drain the pasta and mix it with the tomato sauce.” (wait until next command)
+Device: “Yan, it's already fifteen minutes. Drain the pasta and mix it with the tomato sauce.” (wait until next command)
 
 User: “Next.”
 
@@ -232,7 +232,9 @@ Your script should include the pauses. Where does your device wait, and for how 
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing. Please record this interaction (for example, using Zoom's record feature).
 
-\*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+https://youtu.be/5As__L0jLFQ
+
+This conversation basically went as expected because I set very clear instructions. However, this might affect the richness of user experience, and the functions are very limited. More instructions need to be added later to make this device more practical.
 
 
 ---
