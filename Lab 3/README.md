@@ -71,64 +71,11 @@ Check your audio devices before going further. `arecord -l` lists capture device
 
 ## A. Text to Speech
 
-Your Pi can speak in several quite different ways, and the differences are audible in a way that matters for design. In `speech-scripts/` there are shell scripts for each.
-
-### The classic engines
-
-```
-(.venv) $ cd speech-scripts
-
-(.venv) $ sudo apt update
-(.venv) $ sudo apt install -y espeak festival festvox-kallpc16k
-
-(.venv) $ ./espeak_demo.sh
-(.venv) $ ./festival_demo.sh
-```
-
-You can run these `.sh` files by typing `./filename`, and read one with `cat filename`. You can also play audio files directly with `aplay filename` — try `aplay lookdave.wav`.
-
-These are all decades-old technology and they sound like it. `espeak-ng` is a *formant synthesizer*: it generates speech from an acoustic model of the vocal tract, which is why it sounds robotic but also why the whole thing fits in a couple of megabytes and responds instantly. `festival` is *concatenative*: they stitch together recorded fragments of a real speaker, which sounds more human but breaks audibly at the seams.
-
-### Neural TTS with Piper
-
-Note that the Piper command line changed in version 1.x — voices are now downloaded explicitly with `python3 -m piper.download_voices`, and you invoke it as `python3 -m piper`. Tutorials you find online may show the old `echo ... | piper --model ...` form, which no longer works. Browse the [voice samples](https://rhasspy.github.io/piper-samples) and download a different one if you'd like:
-
-```
-(.venv) $ python3 -m piper.download_voices en_US-lessac-medium
-```
-
-[Piper](https://github.com/OHF-Voice/piper1-gpl) synthesizes speech with a small neural network, runs comfortably on the Pi 5, and sounds markedly better than the above.
-
-```
-(.venv) $ ./piper_demo.sh
-```
-
-The demo script also shows `--output-raw`, which streams audio to the speaker as it is generated rather than writing a file first. Listen for the difference in how quickly speech begins. In a conversational system this gap is the thing your user experiences as responsiveness.
-
-\*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
-(This shell file should be saved to your own repo for this lab.)
-
 I chose the Piper voice for my greeting because it sounds more natural and pleasant.
 
 Different voices does not feel like the same greeting. The eSpeak voice sounds like a robot and the voice sounds like a machine notification. In comparison, the Piper voice is more fluent and have human rhythm, so the greeting is more friendly.
 
 ## B. Speech to Text
-
-We use [faster-whisper](https://github.com/SYSTRAN/faster-whisper), a reimplementation of OpenAI's Whisper model that runs several times faster on CPU and does not require PyTorch. All processing happens on the Pi; nothing is sent to a server.
-
-```
-(.venv) $ python transcribe.py lookdave.wav
-```
-
-The transcript is not the interesting output here — the timings are. Run it again with a larger model and compare:
-
-```
-(.venv) $ python transcribe.py lookdave.wav --model base.en
-(.venv) $ python transcribe.py lookdave.wav --model small.en
-#  noted that the first run may take longer because the model is downloaded, and that the HF unauthenticated-request warning is expected and not an error.
-```
-
-Available sizes, smallest first: `tiny.en`, `base.en`, `small.en`, `medium.en`. The `.en` variants are English-only and faster than their multilingual counterparts at the same size.
 
 <img width="738" height="368" alt="Codex Image Sep 27, 2026, 04_13_04 PM" src="https://github.com/user-attachments/assets/498a7ec2-030b-405f-a055-93f44ea30982" />
 I recorded a audio clip saying “It’s Sunday, September 27th.”
@@ -139,26 +86,7 @@ base.en: The transcript was “It’s Sunday September the 27th.” real-time fa
 
 Both models correctly understood the sentences. The base model generates more natural wording, but it takes longer, approximately twice as long as the other one. I would choose tiny.en for a responsive dialogue system. When recognizing more difficult speech or numeric base.en might be more preferable.
 
-
-\*\***Write your own script that verbally asks for a numerical input (a phone number, zipcode, number of pets) and records the answer the respondent provides.**\*\* Numbers are a good stress test — transcription systems make characteristic errors on digit strings, and you will want to know what they are before you design around them.
-
 ## C. Turn-taking: knowing when someone has stopped talking
-
-Everything so far has worked on fixed audio files. A real conversational device does not get told when to start and stop recording — it has to decide. This is the problem that makes speech interfaces hard, and it is mostly not a speech recognition problem.
-
-We use a **voice activity detector** (VAD) to segment the microphone stream into utterances. `listen.py` runs Silero VAD continuously and hands each detected utterance to faster-whisper:
-
-```
-(.venv) $ cd speech-scripts
-(.venv) $ python listen.py
-```
-
-Speak, pause, and watch it transcribe. Now change the endpointing threshold — the amount of silence the system requires before it decides your turn is over:
-
-```
-(.venv) $ python listen.py --min-silence 0.2
-(.venv) $ python listen.py --min-silence 1.5
-```
 
 I tested three endpointing thresholds: 0.2 seconds, 0.7 seconds, and 1.5 seconds.
 
@@ -168,21 +96,11 @@ I tested three endpointing thresholds: 0.2 seconds, 0.7 seconds, and 1.5 seconds
 
 0.7 second: provide a better balance and correctly transcribe my words.
 
-There is no correct value. A system that takes drink orders and a system that listens to someone think out loud want very different thresholds, and the right one depends on what your users are doing with their pauses.
 
-### The complete loop
-
-`echo_bot.py` puts the pieces together: it listens, endpoints, transcribes, and speaks a reply through Piper. The dialogue policy is deliberately trivial — it repeats what you said — so that everything you notice is a property of the timing rather than the content.
-
-```
-(.venv) $ python echo_bot.py
-```
 <img width="657" height="214" alt="Screenshot 2026-09-27 at 4 47 46 PM" src="https://github.com/user-attachments/assets/d2bef412-e1fa-44d0-bddd-c4c84b9177cb" />
 
 
 ## D. Storyboard
-
-Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.)
 
 What I want to design is a cooking timer with built-in recipes.
 
@@ -192,7 +110,7 @@ At present, there is only a recipe for tomato pasta. More options can be importe
 
 <img width="2364" height="1365" alt="IMG_2151" src="https://github.com/user-attachments/assets/e49165a3-a14c-4ecb-a41c-aff99303230d" />
 
-Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses.
+
 
 dialogue：
 
@@ -226,11 +144,7 @@ Device: “Your tomato pasta is ready. Enjoy your meal!”
 
 
 
-Your script should include the pauses. Where does your device wait, and for how long? You now know from Part C that this is a parameter you have to choose, not something that happens for free.
-
 ## E. Acting out the dialogue
-
-Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing. Please record this interaction (for example, using Zoom's record feature).
 
 https://youtu.be/5As__L0jLFQ
 
@@ -241,14 +155,23 @@ This conversation basically went as expected because I set very clear instructio
 
 # Lab 3 Part 2
 
-For Part 2, you will redesign the interaction with the speech-enabled device using the data collected, as well as feedback from part 1.
-
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings.
-2. What are other modes of interaction *beyond speech* that you might also use to clarify how to interact? In particular: how does someone know when the device is listening, and when it is thinking? You have a screen and an LED.
-3. Make a new storyboard, diagram and/or script based on these reflections.
-4. (optional) Integrate [input devices](inputs.md) in the system
+   
+     Provide more recipe choices: The current prototype supports only one recipe. I would add one or two additional recipes (easy to achieve for now) so that users can choose what they want to cook.
+
+     Confirm numerical information: Speech recognition may confuse similar numbers, such as “fifteen” and “fifty.” Before starting a timer, the device should display the recognized time on the screen and ask the user to confirm it.
+    
+     Add more voice commands: The system should support commands such as “repeat,” “go back,” and “stop.” These commands would allow users to control the recipe without touching the device.
+    
+     Explain the available commands: The screen should display the commands that users can say, so they do not have to guess how to interact with the system.
+
+     Handle silence: If the device does not detect a response for an extended period, it should remind the user or repeat the question instead of waiting indefinitely.
+   
+3. What are other modes of interaction *beyond speech* that you might also use to clarify how to interact? In particular: how does someone know when the device is listening, and when it is thinking? You have a screen and an LED.
+4. Make a new storyboard, diagram and/or script based on these reflections.
+5. (optional) Integrate [input devices](inputs.md) in the system
 
 ## Prototype your system
 
