@@ -78,6 +78,7 @@ Different voices does not feel like the same greeting. The eSpeak voice sounds l
 ## B. Speech to Text
 
 <img width="738" height="368" alt="Codex Image Sep 27, 2026, 04_13_04 PM" src="https://github.com/user-attachments/assets/498a7ec2-030b-405f-a055-93f44ea30982" />
+
 I recorded a audio clip saying “It’s Sunday, September 27th.”
 
 tiny.en: The transcript was “It’s Sunday, September 27th.” real-time factor: 0.20x, transcription took 1.01 seconds.
@@ -109,6 +110,7 @@ The main voice-controlled functions of this cooking timer are divided into sever
 At present, there is only a recipe for tomato pasta. More options can be imported later.
 
 <img width="2364" height="1365" alt="IMG_2151" src="https://github.com/user-attachments/assets/e49165a3-a14c-4ecb-a41c-aff99303230d" />
+
 
 
 
@@ -168,10 +170,24 @@ This conversation basically went as expected because I set very clear instructio
      Explain the available commands: The screen should display the commands that users can say, so they do not have to guess how to interact with the system.
 
      Handle silence: If the device does not detect a response for an extended period, it should remind the user or repeat the question instead of waiting indefinitely.
+
+     If the device cannot understand the user, it should clearly explain the problem ("Sorry I cannot understand.") and ask again. 
    
 3. What are other modes of interaction *beyond speech* that you might also use to clarify how to interact? In particular: how does someone know when the device is listening, and when it is thinking? You have a screen and an LED.
-4. Make a new storyboard, diagram and/or script based on these reflections.
-5. (optional) Integrate [input devices](inputs.md) in the system
+
+      The redesigned device will use a screen, an LED, a microphone, a speaker, and two physical buttons.
+      
+      Screen: When no recipe is active, the default screen will display the available starting commands, such as “Choose Recipe” and “Start Cooking.” During a recipe, the screen will display commands 
+      relevant to the current situation, such as “Next,” “Repeat,” “Go Back,” and “Stop.” If the information requires multiple pages, the user can use two physical buttons to move to the previous or next page. The screen will also display status messages such as “Listening…” and “Thinking…”. The timer will also show on the screen.
+      
+      LED: The LED will provide immediate feedback about the device’s current state. It will remain steadily lit while the user is speaking, indicating that the device is listening. It will blink slowly while the device is recognizing or processing the user’s speech.
+      
+      Microphone: The microphone will capture the user’s speech for voice-command recognition.
+
+      Speaker: The speaker will read recipe instructions aloud, ask questions, confirm recognized information, and tell the user when the system does not understand a command.
+   
+5. Make a new storyboard, diagram and/or script based on these reflections.
+6. (optional) Integrate [input devices](inputs.md) in the system
 
 ## Prototype your system
 
