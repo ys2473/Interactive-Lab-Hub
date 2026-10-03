@@ -191,21 +191,21 @@ This conversation basically went as expected because I set very clear instructio
    SCRIPT 1 — TOMATO PASTA
       
       Device: “Hi Yan! What would you like to cook today?”
-   (The screen displays “Tomato pasta” and “Steak.”.)
+   (The screen displays “Tomato pasta” and “Steak.”“Go Back,” and “Stop.”)
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
       User: “Pasta.”
    (The red LED stays on throughout the user’s speech, then slowly blinks while the device recognizes the response. It turns off when the device begins speaking.)
       
       Device: “You will need pasta, tomato sauce, garlic, olive oil, salt, and water. Say ‘repeat’ to hear the ingredients again, or say ‘start cooking’ when you are ready.”
-   (The screen displays “Repeat” and “Start cooking.” The LED remains off.)
+   (The screen displays “Repeat” “Start cooking” “Go Back,” and “Stop.” The LED remains off.)
    (Wait for the user’s response, followed by 2 seconds of silence.)
       
       User: “Start cooking.”
    (The red LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “Step one: Fill a pot with water, add salt, and place it on the stove. Say ‘next’ when the water begins to boil, or say ‘repeat’ to hear this step again.”
-   (The screen displays “Next” and “Repeat.”)
+   (The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.”)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
       User: “Next.”
@@ -237,6 +237,9 @@ This conversation basically went as expected because I set very clear instructio
       Device: “Your tomato pasta is ready. Enjoy your meal!”
    (The LED turns off. The screen displays ‘Pasta ready. Enjoy!')
 
+If no response is detected for five seconds, the device says, “I’m still waiting. Say ‘repeat’ if you would like to hear the instruction again.”
+
+If a command is not recognized, the screen displays the recognized text and the device says, “Sorry, I didn’t understand. You can say ‘next,’ ‘repeat,’ ‘go back,’ or ‘stop.’”
    
 
    SCRIPT 2 — STEAK
@@ -249,21 +252,21 @@ This conversation basically went as expected because I set very clear instructio
    (The red LED stays on throughout the user’s speech, then slowly blinks while the device recognizes the response. It turns off when the device begins speaking.)
       
       Device: “You will need a steak, cooking oil, salt, pepper, a frying pan, tongs, and a food thermometer. Say ‘repeat’ to hear the list again, or say ‘start cooking’ when you are ready.”
-   (The screen displays “Repeat” and “Start cooking.” The LED remains off.)
+   (The screen displays “Repeat” and “Start cooking.” “Go Back,” and “Stop.” The LED remains off.)
    (Wait for the user’s response, followed by 2 seconds of silence.)
       
       User: “Start cooking.”
    (The red LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “Step one: Pat the steak dry and season both sides with salt and pepper. Say ‘next’ when you are ready, or say ‘repeat’ to hear this step again.”
-   (The LED turns off. The screen displays “Next” and “Repeat.”)
+   (The LED turns off. The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.”)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
       User: “Next.”
    (The red LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “Step two: Heat your frying pan and add a little cooking oil. Say ‘next’ when the pan is hot, or say ‘repeat’ to hear this step again.”
-   (The LED turns off. The screen displays “Next” and “Repeat.”)
+   (The LED turns off. The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.”)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
       User: “Next.”
@@ -287,7 +290,7 @@ This conversation basically went as expected because I set very clear instructio
    (Wait until the timer finishes.)
       
       Device: “Yan, your timer is finished. Check the crust and flip the steak. Say ‘next’ once you have turned it, or say ‘repeat’ to hear this step again.”
-   (The screen displays “Next” and “Repeat.” The LED remains off.)
+   (The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.” The LED remains off.)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
       User: “Next.”
@@ -321,7 +324,7 @@ This conversation basically went as expected because I set very clear instructio
    (Wait until the timer finishes.)
       
       Device: “Yan, the resting time is finished. Your steak is ready to serve. Enjoy your meal!”
-   (The screen displays ‘Steak ready. Enjoy!")
+   (The screen displays ‘Steak ready. Enjoy!')
    
 5. (optional) Integrate [input devices](inputs.md) in the system
 
