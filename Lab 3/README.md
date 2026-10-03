@@ -1,73 +1,6 @@
-# Chatterboxes
-
-Yan Shen
-[![Watch the video](https://user-images.githubusercontent.com/1128669/135009222-111fe522-e6ba-46ad-b6dc-d1633d21129c.png)](https://www.youtube.com/embed/Q8FWzLMobx0?start=19)
-
-In this lab, we want you to design interaction with a speech-enabled device — something that listens and talks to you. This device can do anything *but* control lights (since we already did that in Lab 1). First, we want you to storyboard what you imagine the conversational interaction to be like. Then you will use wizarding techniques to elicit examples of what people might say, ask, or respond. We then want you to use the examples collected from at least two other people to inform the redesign of the device.
-
-We will focus on **audio** as the main modality for interaction to start; these general techniques can be extended to **video**, **haptics** or other interactive mechanisms in the second part of the Lab.
-
-A note on what you are building with. Speech interfaces are usually taught as two boxes — speech-in, speech-out — and that framing hides the part that actually determines whether an interaction works. Between listening and speaking sits the question of **whose turn it is**: when does the device decide you have finished talking, and how long does it make you wait before it answers? This lab gives you direct control over both, and we will ask you to notice what changes when you move them.
-
-## Prep for Part 1: Get the Latest Content and Pick up Additional Parts
-
-Please check instructions in [prep.md](prep.md) and complete the setup.
-
-### Pick up Web Camera If You Don't Have One
-
-Students who have not already received a web camera will receive their Webcam and at the beginning of lab. If you cannot make it to class this week, please contact the TAs to ensure you get these.
-
-### Get the Latest Content
-
-As always, pull updates from the class Interactive-Lab-Hub to both your Pi and your own GitHub repo.
-
-**\[recommended\]** Option 1: On the Pi, `cd` to your `Interactive-Lab-Hub`, pull the updates from upstream (class lab-hub) and push the updates back to your own GitHub repo. You will need the *personal access token* for this.
-
-```
-pi@ixe00:~$ cd Interactive-Lab-Hub
-pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2026
-pi@ixe00:~/Interactive-Lab-Hub $ git add .
-pi@ixe00:~/Interactive-Lab-Hub $ git commit -m "get lab3 updates"
-pi@ixe00:~/Interactive-Lab-Hub $ git push
-```
-
-Option 2: On your own GitHub repo, create a pull request to get updates from the class Interactive-Lab-Hub. After you have the latest updates online, go to your Pi, `cd` to your `Interactive-Lab-Hub` and use `git pull`.
-
----
+# Chatterboxes -- Yan Shen(ys2473)
 
 # Part 1
-
-## Setup
-
-Create and activate a virtual environment for this lab:
-
-```
-pi@ixe00:~$ cd Interactive-Lab-Hub/Lab\ 3
-pi@ixe00:~/Interactive-Lab-Hub/Lab 3 $ python3 -m venv .venv
-pi@ixe00:~/Interactive-Lab-Hub/Lab 3 $ source .venv/bin/activate
-(.venv) pi@ixe00:~/Interactive-Lab-Hub/Lab 3 $
-```
-
-Install the Python dependencies:
-
-```
-(.venv) $ pip install -r requirements.txt
-```
-
-This takes a few minutes. If you would like it to take considerably less time, [`uv`](https://docs.astral.sh/uv/) is a drop-in replacement for `pip` that is dramatically faster on the Pi:
-
-```
-(.venv) $ pip install uv && uv pip install -r requirements.txt
-```
-
-Then run the setup script, which installs the classic speech synthesizers, downloads the voice activity detection model, and pre-fetches a neural voice and a speech recognition model so you are not waiting on downloads during lab:
-
-```
-(.venv):~$ cd speech-scripts
-(.venv) $ ./setup.sh
-```
-
-Check your audio devices before going further. `arecord -l` lists capture devices and `aplay -l` lists playback devices; if your webcam microphone or Bluetooth speaker does not appear, fix that first — every script below assumes the system defaults are the ones you want.
 
 ## A. Text to Speech
 
@@ -333,10 +266,15 @@ If a command is not recognized, the screen displays the recognized text and the 
 My prototype is a voice-controlled cooking assistant. It provides instructions for two recipes: tomato pasta and steak(can add more in the future). The system uses the two buttons to starts or stops the interaction. After Button A is pressed, the device asks the participant what they would like to cook. The participant can choose one of the recipe and the system moves to the corresponding one. The device will read the instructions to the user step by step and the user will respond using provided commands. The program then checks the recognized text for commands such as “start cooking,” “next,” “repeat,” “go back,” “stop,” “yes,” and “no.”The MiniPiTFT displays the current recipe name, step number, instruction, and available voice commands. It also displays whether the system is listening, thinking, speaking, or running a timer. The screen is also used to make sure if the time recognized is correct. When a recipe is complete, the screen displays “Enjoy your meal!” in large centered text and stops listening for speech. After five seconds, it automatically returns to the initial page. If the participant stops the interaction with Button B or the voice command “stop,” the system displays the stopped page and also returns to the initial page after five seconds without another button press.
 
 Chose tomato pasta with different commands and stop in the end.
+https://youtube.com/shorts/tBGqAAaYoB8
 
 Chose tomato pasta in a normal process.
 
 Chose steak in a normal process.
+
+
+<img width="644" height="467" alt="Screenshot 2026-10-03 at 12 09 39 PM" src="https://github.com/user-attachments/assets/0dc627e6-7271-4313-98d5-045cd4bf8291" />
+
 
 
 Because I was unable to figure out how to safely connect the LED to the Raspberry Pi, I did not include it in my prototype. Instead, I displayed three different system states in the upper-left corner of the screen with three different colors: “Listening,” “Thinking,” and “Speaking.”
@@ -346,8 +284,6 @@ Because I was unable to figure out how to safely connect the LED to the Raspberr
 <img width="200" height="120" alt="Screenshot 2026-10-03 at 3 48 51 PM" src="https://github.com/user-attachments/assets/6506345f-a9f1-442e-8163-e3fd0ffe58d6" />
 
 
-
-
 ## Test the system
 
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard *after* the interaction, but we recognize that can be hard.)
@@ -355,23 +291,18 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+
+I tested the system with two participants. Both were able to choose a recipe, follow the steps, and use the timer. Displaying “Listening,” “Thinking,” and “Speaking” also helped participants understand the system’s current state. However, one of them felt that some instructions were too long. It's easy to forget the available commands or the beginning of an instruction before the device finishes speaking.  Speech recognition also had difficulty in noisy environments and sometimes confused similar-sounding words and numbers.
 
 ### What worked well about the controller and what didn't?
-\*\**your answer here*\*\*
+
+The two buttons on the MiniPiTFT provided a simple physical controller. Button A started or restarted the interaction, while Button B stopped it. This was easy to operate and did not require a separate computer or phone. The screen also worked as part of the controller by showing the current recipe, step, timer, available commands, and system state. However, the buttons are not clearly labeled, so a new participant may not know what Button A and Button B do without an explanation.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-\*\**your answer here*\*\*
+
+The instructions should be shorter and divided into smaller pieces. Instead of presenting several actions and commands in one sentence, the system could give one instruction at a time and display only the commands that are currently relevant. An autonomous version should use the current recipe state to limit the possible interpretations of the participant’s speech. For example, when the device asks the participant to choose a recipe, it only needs to recognize “pasta” or “steak.”
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
-\*\**your answer here*\*\*
 
-<details>
-  <summary><strong>Submission Cleanup Reminder (Click to Expand)</strong></summary>
+The system could save each interaction as a structured record containing the current recipe step, the participant’s audio, Whisper’s transcription, the command selected by the system, the participant’s response time, and whether the participant had to repeat or correct the command. It could also record timer confirmations, misunderstood commands, button presses, use of “repeat” or “go back,” and moments when no response was received. These records could help identify which instructions are too long and which words or numbers are frequently misrecognized.
 
-  **Before submitting your README.md:**
-  - This readme.md file has a lot of extra text for guidance.
-  - Remove all instructional text and example prompts from this file.
-  - You may either delete these sections or use the toggle/hide feature in VS Code to collapse them for a cleaner look.
-  - Your final submission should be neat, focused on your own work, and easy to read for grading.
-</details>
