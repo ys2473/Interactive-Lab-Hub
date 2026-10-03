@@ -325,19 +325,28 @@ If a command is not recognized, the screen displays the recognized text and the 
       
    Device: “Yan, the resting time is finished. Your steak is ready to serve. Enjoy your meal!”
    (The screen displays ‘Steak ready. Enjoy!')
-   
-5. (optional) Integrate [input devices](inputs.md) in the system
 
 ## Prototype your system
 
-The system should:
-* use the Raspberry Pi
-* use one or more sensors
-* require participants to speak to it
+### How the System Works
 
-*Document how the system works.*
+My prototype is a voice-controlled cooking assistant. It provides instructions for two recipes: tomato pasta and steak(can add more in the future). The system uses the two buttons to starts or stops the interaction. After Button A is pressed, the device asks the participant what they would like to cook. The participant can choose one of the recipe and the system moves to the corresponding one. The device will read the instructions to the user step by step and the user will respond using provided commands. The program then checks the recognized text for commands such as “start cooking,” “next,” “repeat,” “go back,” “stop,” “yes,” and “no.”The MiniPiTFT displays the current recipe name, step number, instruction, and available voice commands. It also displays whether the system is listening, thinking, speaking, or running a timer. The screen is also used to make sure if the time recognized is correct. When a recipe is complete, the screen displays “Enjoy your meal!” in large centered text and stops listening for speech. After five seconds, it automatically returns to the initial page. If the participant stops the interaction with Button B or the voice command “stop,” the system displays the stopped page and also returns to the initial page after five seconds without another button press.
 
-*Include videos or screencaptures of both the system and the controller.*
+Chose tomato pasta with different commands and stop in the end.
+
+Chose tomato pasta in a normal process.
+
+Chose steak in a normal process.
+
+
+Because I was unable to figure out how to safely connect the LED to the Raspberry Pi, I did not include it in my prototype. Instead, I displayed three different system states in the upper-left corner of the screen with three different colors: “Listening,” “Thinking,” and “Speaking.”
+
+<img width="200" height="120" alt="Screenshot 2026-10-03 at 3 48 41 PM" src="https://github.com/user-attachments/assets/f88cf985-94c6-4921-9ded-8ed2d45eb21d" />
+<img width="200" height="120" alt="Screenshot 2026-10-03 at 3 48 46 PM" src="https://github.com/user-attachments/assets/ad77ff62-f073-4d13-9e1e-e27fc7b0e538" />
+<img width="200" height="120" alt="Screenshot 2026-10-03 at 3 48 51 PM" src="https://github.com/user-attachments/assets/6506345f-a9f1-442e-8163-e3fd0ffe58d6" />
+
+
+
 
 ## Test the system
 
