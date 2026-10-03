@@ -195,34 +195,34 @@ This conversation basically went as expected because I set very clear instructio
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
       User: “Pasta.”
-   (The red LED stays on throughout the user’s speech, then slowly blinks while the device recognizes the response. It turns off when the device begins speaking.)
+   (The LED stays on throughout the user’s speech, then slowly blinks while the device recognizes the response. It turns off when the device begins speaking.)
       
       Device: “You will need pasta, tomato sauce, garlic, olive oil, salt, and water. Say ‘repeat’ to hear the ingredients again, or say ‘start cooking’ when you are ready.”
    (The screen displays “Repeat” “Start cooking” “Go Back,” and “Stop.” The LED remains off.)
    (Wait for the user’s response, followed by 2 seconds of silence.)
       
       User: “Start cooking.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “Step one: Fill a pot with water, add salt, and place it on the stove. Say ‘next’ when the water begins to boil, or say ‘repeat’ to hear this step again.”
    (The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.”)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
       User: “Next.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “Step two: Add the pasta to the pot. How many minutes would you like to set for the pasta?”
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
       User: “Fifteen minutes.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “You said fifteen minutes. Is that correct?”
    (The LED turns off. The screen displays “15:00” with “Yes” and “No.” The timer has not started.)
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
       User: “Yes.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “Okay. I have started a fifteen-minute timer. Meanwhile, heat the tomato sauce with garlic and olive oil in a separate pan.”
    (The screen displays the running countdown.)
@@ -232,7 +232,7 @@ This conversation basically went as expected because I set very clear instructio
    (Wait for a command, followed by 0.7 seconds of silence.)
       
       User: “Next.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
       Device: “Your tomato pasta is ready. Enjoy your meal!”
    (The LED turns off. The screen displays ‘Pasta ready. Enjoy!')
@@ -244,86 +244,86 @@ If a command is not recognized, the screen displays the recognized text and the 
 
    SCRIPT 2 — STEAK
       
-      Device: “Hi Yan! What would you like to cook today?”
+   Device: “Hi Yan! What would you like to cook today?”
    (The screen displays “Tomato pasta” and “Steak.”)
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
-      User: “Steak.”
-   (The red LED stays on throughout the user’s speech, then slowly blinks while the device recognizes the response. It turns off when the device begins speaking.)
+   User: “Steak.”
+   (The LED stays on throughout the user’s speech, then slowly blinks while the device recognizes the response. It turns off when the device begins speaking.)
       
-      Device: “You will need a steak, cooking oil, salt, pepper, a frying pan, tongs, and a food thermometer. Say ‘repeat’ to hear the list again, or say ‘start cooking’ when you are ready.”
+   Device: “You will need a steak, cooking oil, salt, pepper, a frying pan, tongs, and a food thermometer. Say ‘repeat’ to hear the list again, or say ‘start cooking’ when you are ready.”
    (The screen displays “Repeat” and “Start cooking.” “Go Back,” and “Stop.” The LED remains off.)
    (Wait for the user’s response, followed by 2 seconds of silence.)
       
-      User: “Start cooking.”
+   User: “Start cooking.”
    (The red LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “Step one: Pat the steak dry and season both sides with salt and pepper. Say ‘next’ when you are ready, or say ‘repeat’ to hear this step again.”
+   Device: “Step one: Pat the steak dry and season both sides with salt and pepper. Say ‘next’ when you are ready, or say ‘repeat’ to hear this step again.”
    (The LED turns off. The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.”)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
-      User: “Next.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Next.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “Step two: Heat your frying pan and add a little cooking oil. Say ‘next’ when the pan is hot, or say ‘repeat’ to hear this step again.”
+   Device: “Step two: Heat your frying pan and add a little cooking oil. Say ‘next’ when the pan is hot, or say ‘repeat’ to hear this step again.”
    (The LED turns off. The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.”)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
-      User: “Next.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Next.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “Step three: Carefully place the steak in the pan. How many minutes would you like to set before checking the first side?”
+   Device: “Step three: Carefully place the steak in the pan. How many minutes would you like to set before checking the first side?”
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
-      User: “Three minutes.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Three minutes.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “You said three minutes. Is that correct?”
+   Device: “You said three minutes. Is that correct?”
    (The LED turns off. The screen displays “03:00” with “Yes” and “No.” The timer has not started.)
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
-      User: “Yes.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Yes.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “Okay. I have started a three-minute timer.”
+   Device: “Okay. I have started a three-minute timer.”
    (The LED turns off. The screen displays the running countdown.)
    (Wait until the timer finishes.)
       
-      Device: “Yan, your timer is finished. Check the crust and flip the steak. Say ‘next’ once you have turned it, or say ‘repeat’ to hear this step again.”
+   Device: “Yan, your timer is finished. Check the crust and flip the steak. Say ‘next’ once you have turned it, or say ‘repeat’ to hear this step again.”
    (The screen displays “Next” and “Repeat.”“Go Back,” and “Stop.” The LED remains off.)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
-      User: “Next.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Next.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “How many minutes would you like to set before checking the second side?”
+   Device: “How many minutes would you like to set before checking the second side?”
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
-      User: “Three minutes.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Three minutes.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “You said three minutes. Is that correct?”
+   Device: “You said three minutes. Is that correct?”
    (Wait for the user’s response, followed by 0.7 seconds of silence.)
       
-      User: “Yes.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Yes.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “Okay. I have started another three-minute timer.”
+   Device: “Okay. I have started another three-minute timer.”
    (The LED turns off. The screen displays the running countdown.)
    (Wait until the timer finishes.)
       
-      Device: “Yan, your timer is finished. Check the center of the steak with your thermometer. Once it reaches at least 145 degrees Fahrenheit, or 63 degrees Celsius, transfer it to a plate. Say ‘start resting’ when it is on the plate, ‘add time’ if it needs more cooking, or ‘repeat’ to hear this step again.”
+   Device: “Yan, your timer is finished. Check the center of the steak with your thermometer. Once it reaches at least 145 degrees Fahrenheit, or 63 degrees Celsius, transfer it to a plate. Say ‘start resting’ when it is on the plate, ‘add time’ if it needs more cooking, or ‘repeat’ to hear this step again.”
    (The screen displays “Start resting,” “Add time,” and “Repeat.” The LED remains off.)
    (Wait for a command, followed by 0.7 seconds of silence.)
       
-      User: “Start resting.”
-   (The red LED stays on during speech, then slowly blinks during recognition.)
+   User: “Start resting.”
+   (The LED stays on during speech, then slowly blinks during recognition.)
       
-      Device: “Okay. Let the steak rest for at least three minutes. I have started the resting timer.”
+   Device: “Okay. Let the steak rest for at least three minutes. I have started the resting timer.”
    (The LED turns off. The screen displays the running three-minute countdown.)
    (Wait until the timer finishes.)
       
-      Device: “Yan, the resting time is finished. Your steak is ready to serve. Enjoy your meal!”
+   Device: “Yan, the resting time is finished. Your steak is ready to serve. Enjoy your meal!”
    (The screen displays ‘Steak ready. Enjoy!')
    
 5. (optional) Integrate [input devices](inputs.md) in the system
