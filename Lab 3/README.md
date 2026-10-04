@@ -266,11 +266,16 @@ If a command is not recognized, the screen displays the recognized text and the 
 My prototype is a voice-controlled cooking assistant. It provides instructions for two recipes: tomato pasta and steak(can add more in the future). The system uses the two buttons to starts or stops the interaction. After Button A is pressed, the device asks the participant what they would like to cook. The participant can choose one of the recipe and the system moves to the corresponding one. The device will read the instructions to the user step by step and the user will respond using provided commands. The program then checks the recognized text for commands such as “start cooking,” “next,” “repeat,” “go back,” “stop,” “yes,” and “no.”The MiniPiTFT displays the current recipe name, step number, instruction, and available voice commands. It also displays whether the system is listening, thinking, speaking, or running a timer. The screen is also used to make sure if the time recognized is correct. When a recipe is complete, the screen displays “Enjoy your meal!” in large centered text and stops listening for speech. After five seconds, it automatically returns to the initial page. If the participant stops the interaction with Button B or the voice command “stop,” the system displays the stopped page and also returns to the initial page after five seconds without another button press.
 
 Chose tomato pasta with different commands and stop in the end.
+
 https://youtube.com/shorts/tBGqAAaYoB8
 
 Chose tomato pasta in a normal process.
 
+https://youtube.com/shorts/3m3rsf_4Db8
+
 Chose steak in a normal process.
+
+https://youtu.be/h4eyZkL7u00
 
 
 <img width="644" height="467" alt="Screenshot 2026-10-03 at 12 09 39 PM" src="https://github.com/user-attachments/assets/0dc627e6-7271-4313-98d5-045cd4bf8291" />
