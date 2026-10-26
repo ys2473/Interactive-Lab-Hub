@@ -176,7 +176,7 @@ unsuccessfully recognized
 <img width="786" height="587" alt="Screenshot 2026-10-26 at 5 19 47 PM" src="https://github.com/user-attachments/assets/1271b048-4780-4d82-8592-152a7a284df3" />
 
 
-
+We could use hand tracking for the "before bed" part of my idea. Instead of typing a command, I show a goodnight gesture (like an open palm) to the camera, and that tells the Pi to take the desk photo and start the night. It's easier than finding a button in the dark.
 
 
 ## Part C. 
