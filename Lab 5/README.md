@@ -207,6 +207,9 @@ Consider how you might use this position based approach to create an interaction
 
 https://youtu.be/5uTxqnljpyc
 
+We could use hand tracking for the "before bed" part of my idea. Instead of typing a command, I show a goodnight gesture (like an open palm) to the camera, and that tells the Pi to take the desk photo and start the night. It's easier than finding a button in the dark.
+
+
 
 ## Part D. 
 ### Reason: run Qwen on the Pi with Ollama
