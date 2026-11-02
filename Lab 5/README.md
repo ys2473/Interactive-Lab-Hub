@@ -6,7 +6,7 @@
 
 **Project name:** Camera Fantasic Night
 
-**github link:**https://github.com/MortalJin/Interactive-Lab-Hub/blob/Fall2026/Lab%205/README.md
+github link:https://github.com/MortalJin/Interactive-Lab-Hub/blob/Fall2026/Lab%205/README.md
 
 ## Overview
 
